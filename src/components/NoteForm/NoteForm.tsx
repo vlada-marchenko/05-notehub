@@ -60,7 +60,7 @@ export default function NoteForm({ onCancel }: NoteFormProps) {
       as='textarea'
       id="content"
       name="content"
-      rows="8"
+      rows={8}
       className={css.textarea}
     />
     <ErrorMessage component='span' name="content" className={css.error} />

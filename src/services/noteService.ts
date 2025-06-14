@@ -16,9 +16,7 @@ export interface CreateParams {
 }
 
 export interface HttpResponse {
-    page: number,
     notes: Note[]
-    totalResults: number,
     totalPages: number
 }
 

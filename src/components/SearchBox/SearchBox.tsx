@@ -4,7 +4,6 @@ import React from 'react';
 interface SearchBoxProps {
   search: string
   onSearchChange: (value: string) => void
-  onTagChange: (value: string) => void
 }
 
 

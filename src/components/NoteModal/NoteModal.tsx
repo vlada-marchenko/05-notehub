@@ -20,9 +20,14 @@ export default function NoteModal({ onClose }: NoteModalProps) {
       onClose()
     }
   }
+
+  const originalOverflow = document.body.style.overflow
+  document.body.style.overflow = 'hidden'
+
   document.addEventListener('keydown', handleEscKey)
   return () => {
     document.removeEventListener('keydown', handleEscKey)
+    document.body.style.overflow = originalOverflow
   }
  }, [onClose])
 
